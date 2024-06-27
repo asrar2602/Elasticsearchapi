@@ -1,0 +1,9 @@
+elastic:
+  index: search-test-index
+es:
+  hostname: localhost
+  port: 9200
+  username: elastic
+  password: g97LFh=2MKgR1_5PW3X8
+spring:
+  profiles.active: dev
