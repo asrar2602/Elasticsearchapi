@@ -49,6 +49,7 @@ public class ESClientConnector {
         BulkResponse bulkResponse = elasticsearchClient.bulk(builder.build());
         return !bulkResponse.errors();
     }
+
     public boolean bulkInsertDBEmployees(List<Employee> employeeList) throws IOException {
         BulkRequest.Builder builder = new BulkRequest.Builder();
         employeeList.stream().forEach(employee ->

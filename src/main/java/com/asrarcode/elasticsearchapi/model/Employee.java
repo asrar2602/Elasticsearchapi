@@ -13,8 +13,8 @@ import lombok.NoArgsConstructor;
 public class Employee {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "Customer_Id")
+    @GeneratedValue(strategy = GenerationType.UUID)
+    @Column(name = "Customer_Id", unique = true)
     private String customer_id;
 
     @Transient
